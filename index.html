@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muehehe</title>
+    <title>Simple Greeting Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,15 +45,22 @@
             font-size: 24px;
             color: #333;
         }
+        .custom-image {
+            margin-top: 20px;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>For brave people only</h1>
-        <input type="text" id="nameInput" placeholder="Your name please">
-        <button onclick="displayGreeting()">Muehehe</button>
+        <h1>Login</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="displayGreeting()">Submit</button>
         <div class="greeting" id="greetingMessage"></div>
-        <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="perish" class="custom-image" id="customImage" style="display: none;">
+        <img src="https://github.com/theprodigy2013/meowmeowcats/blob/main/image.png" alt="Custom Picture" class="custom-image" id="customImage" style="display: none;">
     </div>
 
     <script>
@@ -65,7 +72,7 @@
                 greetingMessage.textContent = "Hello, " + name;
                 customImage.style.display = 'block';
             } else {
-                greetingMessage.textContent = "Your name first.";
+                greetingMessage.textContent = "Please enter your name.";
                 customImage.style.display = 'none';
             }
         }
