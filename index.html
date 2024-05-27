@@ -53,14 +53,17 @@
         <input type="text" id="nameInput" placeholder="Your name please">
         <button onclick="displayGreeting()">Muehehe</button>
         <div class="greeting" id="greetingMessage"></div>
+        <img src="https://github.com/theprodigy2013/meowmeowcats/blob/main/image.png" alt="perish" class="custom-image" id="customImage" style="display: none;">
     </div>
 
     <script>
         function displayGreeting() {
             var name = document.getElementById('nameInput').value;
             var greetingMessage = document.getElementById('greetingMessage');
+            var customImage = document.getElementById('customImage');
             if (name) {
                 greetingMessage.textContent = "Hello, " + name;
+                customImage.style.display = 'block';
             } else {
                 greetingMessage.textContent = "Your name first.";
             }
