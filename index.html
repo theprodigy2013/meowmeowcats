@@ -71,14 +71,14 @@
         <img src="https://raw.githubusercontent.com/theprodigy2013/meowmeowcats/main/image.png" alt="perish" class="custom-image" id="customImage" style="display: none;">
     </div>
 
-    <script class="container">
+    <script>
         function displayGreeting() {
             var name = document.getElementById('nameInput').value;
             var greetingMessage = document.getElementById('greetingMessage');
             var customImage = document.getElementById('customImage');
             if(name) {
                 greetingMessage.textContent = "Here's what awaits your baby, " + name + ":";
-                customImage.style.display = 'block';
+                customImage.style.display = 'block' class="container";
             } else {
                 greetingMessage.textContent = "Your name first.";
                 customImage.style.display = 'none';
